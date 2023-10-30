@@ -1,0 +1,131 @@
+<!-- auth: jatan pandya -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 , shrink-to-fit=no">
+    <title>Mandrel Control</title>
+    <link rel="icon" type="image/png" href="static/technology.png">
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="static/index.css">
+    <script src="static/app.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid d-flex justify-content-between align-items-center fw-bold">
+            <div class="d-flex">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" id='refresh' href="/">
+                            <img src="/static/arrow-clockwise.svg" alt="Refresh" width="42" height="42"
+                                title="Refresh!">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <h1 class="display-6 fw-bold">Elcometer 1510 Control</h1>
+            <div class="d-flex">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/help">
+                            <img src="/static/info-circle.svg" alt="Help" width="42" height="39" title="Help!">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-4 text-center fw-bold">
+        <div class="row mb-4">
+            <div class="col">
+                <div class="form-group">
+                    <label for="min-degree-select">
+                        <h4 class="fw-bold">Starting Angle:</h4>
+                    </label>
+                    <select class="form-control bg-dark-subtle text-center" id="min-degree-select" required>
+                        <option value="45" disabled selected hidden>Default=45°</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col">
+                <div class="form-group">
+                    <label for="max-degree-select">
+                        <h4 class="fw-bold">Angular Range:</h4>
+                    </label>
+                    <select class="form-control bg-dark-subtle text-center" id="max-degree-select" required>
+                        <option value="90" disabled selected hidden>Default=90°</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col">
+                <div class="form-group">
+                    <label for="breakCycle-select">
+                        <h4 class="fw-bold">Cycle Interval:</h4>
+                    </label>
+                    <select class="form-control bg-dark-subtle text-center" id="breakCycle-select" required>
+                        <option value="0" disabled selected hidden>Default=0s</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col">
+                <div class="form-group bg">
+                    <label for="pauseInterval-select">
+                        <h4 class="fw-bold">Pause Interval:</h4>
+                    </label>
+                    <select class="form-control bg-dark-subtle text-center" id="pauseInterval-select" required>
+                        <option value="10" disabled selected hidden>Default=10</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="form-group">
+                    <label for="numCycle-select">
+                        <h4 class="fw-bold">Number of Cycles:</h4>
+                    </label>
+                    <select class="form-control bg-dark-subtle text-center" id="numCycle-select" required>
+                        <option value="25" disabled selected hidden>Default=25</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row justify-content-md-center mt-3">
+        <div class="col-md-6">
+            <div class="card text-center">
+                <div class="card-body">
+                    <p class="card-text h4 fw-bold">Current Cycle: <span id="currentCycleInfo"></span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-2 text-center">
+        <div class="d-flex flex-row justify-content-center mt-1 md-0">
+            <div class="col-3">
+                <button id="button1" class="btn btn-primary btn-lg">Run</button>
+            </div>
+            <div class="col-">
+                <button id="button2" class="btn btn-primary btn-lg">Pause</button>
+            </div>
+        </div>
+    </div>
+    <footer class="footer mt-4 bg-dark fixed-bottom ">
+        <div class="d-flex justify-content-between align-items-center p-1 m-1">
+            <a class="nav-link active" id='shutdown' href="/shutdown">
+            <img src="/static/power.svg" alt="Shutdown" width="30" height="30" title="Shutdown!">
+            </a>
+            <p class="mb-0">© v.1.0.0 2023 <a href="https://www.quiretech.net/">QuireTech LLC</a></p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="static/js/bootstrap.min.js"></script>
+</body>
+
+</html>

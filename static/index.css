@@ -1,0 +1,100 @@
+/* auth: jatan pandya */
+body,
+h1,
+p,
+input {
+    margin: 1.15%;
+    padding: 0.50%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+body {
+    background-color: #474747;
+    height: 100vh;
+    overflow: hidden;
+    margin-bottom: auto;
+    background-image: linear-gradient(0.3turn, #270707, #741b1b, #d32f2c);
+    padding-bottom: 10px;
+}
+
+.run,
+.pause,
+.stop,
+.resume {
+    transition: background-color 0.5s;
+    font-family: Helvetica, Arial, sans-serif;
+    display: inline-block;
+    outline: 0;
+    cursor: pointer;
+    border: 0;
+    border-radius: 25px;
+    padding: 13px;
+    width: 220px;
+    font-size: 25px;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 1;
+    margin: auto;
+    margin-bottom: 15px;
+    margin-top: 20px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.7);
+}
+
+.run {
+    background-color: #26ba49;
+    color: white;
+}
+
+.stop {
+    background-color: #B22222;
+    color: white;
+}
+
+.pause {
+    background-color: #e8b42e;
+    color: white;
+}
+
+.resume {
+    background-color: #3e8ac8;
+    color: white;
+}
+
+
+.footer a {
+    color: #e8e8e8;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer p {
+    color: #808080;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.navbar {
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.8);
+    border-radius: 20px;
+    background-color: #e6e6e6;
+
+}
+
+.container {
+    background-color: #f8f9fa;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.8);
+    border-radius: 20px;
+    padding: 2.5%;
+
+}
+
+.card,
+.card-body {
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.6);
+    border-radius: 15px;
+    background-color: #f8f9fa;
+}
+
